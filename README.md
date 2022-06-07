@@ -18,12 +18,6 @@ SV2TTS is a deep learning framework in three stages. In the first stage, one cre
 |[1703.10135](https://arxiv.org/pdf/1703.10135.pdf) | Tacotron (synthesizer) | Tacotron: Towards End-to-End Speech Synthesis | [fatchord/WaveRNN](https://github.com/fatchord/WaveRNN)
 |[1710.10467](https://arxiv.org/pdf/1710.10467.pdf) | GE2E (encoder)| Generalized End-To-End Loss for Speaker Verification | This repo |
 
-## News
-**10/01/22**: I recommend checking out [CoquiTTS](https://github.com/coqui-ai/tts). It's a good and up-to-date TTS repository targeted for the ML community. It can also do voice cloning and more, such as cross-language cloning or voice conversion.
-
-**28/12/21**: I've done a [major maintenance update](https://github.com/CorentinJ/Real-Time-Voice-Cloning/pull/961). Mostly, I've worked on making setup easier. Find new instructions in the section below.
-
-**14/02/21**: This repo now runs on PyTorch instead of Tensorflow, thanks to the help of @bluefish.
 
 **13/11/19**: I'm now working full time and I will rarely maintain this repo anymore. To anyone who reads this:
 - **If you just want to clone your voice (and not someone else's):** I recommend our free plan on [Resemble.AI](https://www.resemble.ai/). You will get a better voice quality and less prosody errors.
@@ -49,7 +43,6 @@ Before you download any dataset, you can begin by testing your configuration wit
 
 `python demo_cli.py`
 
-If all tests pass, you're good to go.
 
 ### 4. (Optional) Download Datasets
 For playing with the toolbox alone, I only recommend downloading [`LibriSpeech/train-clean-100`](https://www.openslr.org/resources/12/train-clean-100.tar.gz). Extract the contents as `<datasets_root>/LibriSpeech/train-clean-100` where `<datasets_root>` is a directory of your choosing. Other datasets are supported in the toolbox, see [here](https://github.com/CorentinJ/Real-Time-Voice-Cloning/wiki/Training#datasets). You're free not to download any dataset, but then you will need your own data as audio files or you will have to record it with the toolbox.
@@ -61,4 +54,3 @@ You can then try the toolbox:
 or  
 `python demo_toolbox.py`  
 
-depending on whether you downloaded any datasets. If you are running an X-server or if you have the error `Aborted (core dumped)`, see [this issue](https://github.com/CorentinJ/Real-Time-Voice-Cloning/issues/11#issuecomment-504733590).
